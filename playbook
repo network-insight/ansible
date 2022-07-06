@@ -1,0 +1,13 @@
+---
+- name: install start and enable httpd
+  hosts: tower1
+  tasks:
+  - name: package install
+    package:
+      name: httpd
+      state: latest
+  - name: start and enable service
+    service:
+      name: httpd
+      state: started
+      enabled: yes
