@@ -1,6 +1,6 @@
 ---
 - name: install start and enable httpd
-  hosts: tower1
+  hosts: tower2
   tasks:
   - name: package install
     package:
