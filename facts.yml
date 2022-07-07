@@ -1,0 +1,4 @@
+- name: update fact cache
+  hosts: tower1
+  gather_facts: yes
+...
