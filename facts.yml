@@ -1,4 +1,4 @@
 - name: update fact cache
-  hosts: tower1
+  hosts: all
   gather_facts: yes
 ...
