@@ -1,13 +1,13 @@
 ---
-- name: remove {{ something }}
-  hosts: all
+- name: remove {{ package }}
+  hosts: localhost
   tasks:
-  - name: stop {{ something }}
+  - name: stop {{ package }}
     service:
-      name: "{{ something }}"
+      name: "{{ package }}"
       enabled: false
       state: stopped
-  - name: uninstall {{ something }}
+  - name: uninstall {{ package }}
     package:
-      name: "{{ something }}"
+      name: "{{ package }}"
       state: absent
