@@ -1,0 +1,5 @@
+- name: print an error 
+  hosts: localhost
+  tasks:
+  - debug:
+      msg: Hello Pluralsight viewers, we have an error!!

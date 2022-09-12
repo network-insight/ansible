@@ -1,5 +1,0 @@
-- name: print to something
-  hosts: localhost
-  tasks:
-  - debug:
-      msg: Hello viewers, we have an error!!
