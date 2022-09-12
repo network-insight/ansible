@@ -1,13 +1,13 @@
 ---
-- name: install run and enable {{ package }}
+- name: install run and enable {{ something }}
   hosts: localhost
   tasks:
-  - name: install {{ package }}
+  - name: install {{ something }}
     package:
       name: "{{ package }}"
       state: latest
-  - name: run and enable {{ package }}
+  - name: run and enable {{ something }}
     service:
-      name: "{{ package }}"
+      name: "{{ something }}"
       state: started
       enabled: yes
