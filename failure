@@ -1,0 +1,5 @@
+- name: print something
+  hosts: localhost
+  tasks:
+  - debug:
+      msg: we have an error
