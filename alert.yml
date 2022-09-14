@@ -1,5 +1,5 @@
-- name: print an webhook 
+- name: print an test 
   hosts: localhost
   tasks:
   - debug:
-      msg: Hello Pluralsight viewers, we have an webook!!
+      msg: Hello Pluralsight viewers, we have an test!!
